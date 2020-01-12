@@ -1,10 +1,61 @@
 * {
-    box-sizing: border-box;
     /* border 를 기준으로 */
+    box-sizing: border-box;
 }
 
 
 /* html & body 에는 기본적으로 마진패딩이 잡혀있다. */
+
+#header-top span:first-child {
+    height: 21px;
+    color: #888;
+    letter-spacing: -1px;
+    font-size: 11px;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+#header-top a {
+    text-decoration: none;
+}
+
+#header-top #al_ico_link {
+    display: inline-block;
+    margin-left: 5px;
+    width: 6px;
+    height: 7px;
+    background-position: -215px -97px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191212.png);
+    background-repeat: no-repeat;
+}
+
+#header-top #al_bar {
+    display: inline-block;
+    margin: 5px 4px 0 9px;
+    width: 1px;
+    height: 11px;
+    background: #ebeef3;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191212.png);
+    background-repeat: no-repeat;
+}
+
+#header-top #first-span span:first-child {
+    display: inline-block;
+    width: 58px;
+    height: 11px;
+    background-position: 0 -158px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191212.png);
+    background-repeat: no-repeat;
+}
+
+#header-top #sec-span span:first-child {
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191212.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -136px -158px;
+}
 
 html,
 body {
@@ -122,13 +173,13 @@ nav span:first-child {
     height: 16px;
     display: inline-block;
     background-repeat: no-repeat;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
     margin-left: 14px;
 }
 
 nav li:first-child span:first-child {
     width: 25px;
     background-position: -259px -259px;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
     /* first li 에서만 margin-left 넣고 싶지 않을 때  */
     margin-left: 0;
 }
@@ -136,29 +187,24 @@ nav li:first-child span:first-child {
 nav li:nth-child(2) span:first-child {
     width: 27px;
     background-position: -37px -259px;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
 }
 
 nav li:nth-child(3) span:first-child {
     width: 40px;
     background-position: -182px -156px;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
 }
 
 nav li:nth-child(4) span:first-child {
     width: 40px;
     background-position: -126px -130px;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
 }
 
 nav li:nth-child(5) span:first-child {
     width: 26px;
     background-position: -294px 0;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
 }
 
 nav li:nth-child(6) span:first-child {
     width: 25px;
     background-position: -71px -285px;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
 }

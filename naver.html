@@ -18,8 +18,14 @@
             <!-- block formatting context 를 못 쓰겟다고 하면 다음 div에 clear: both 주기 -->
             <div id="header-top">
                 <span style="display: inline;">네이버를 시작페이지로</span>
-                <span style="display: inline;">쥬니어 네이버</span>
-                <span style="display: inline;">해피빈</span>
+                <span id="al_ico_link"></span><span class="blind">></span>
+                <span id="al_bar"></span><span class="blind">al_bar</span>
+                <a id="first-span" href="">
+                    <span></span><span class="blind">쥬니어 네이버</span>
+                </a>
+                <a id="sec-span" href="">
+                    <span></span><span class="blind">해피빈</span>
+                </a>
             </div>
 
             <div id="header-search" style="clear:both">
@@ -44,7 +50,9 @@
     <nav>
         <div class="center-align">
             <ul>
-                <li><a href=""><span></span><span class="blind">메일</span></a></li>
+                <li>
+                    <a href=""><span></span><span class="blind">메일</span></a>
+                </li>
                 <li><a href=""><span></span><span class="blind">카페</span></a></li>
                 <li><a href=""><span></span><span class="blind">블로그</span></a></li>
                 <li><a href=""><span></span><span class="blind">지식인</span></a></li>
