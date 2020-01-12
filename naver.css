@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    /* border 를 기준으로 */
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header-center {
+    position: relative;
+    margin: 0 auto;
+    width: 1080px;
+}
+
+#header-search h1 {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+    background-position: -4px -12px;
+    text-indent: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#header-search fieldset {
+    margin-left: 20px;
+    width: 460px;
+    height: 46px;
+    display: inline-block;
+    padding: 12px 0px 12px 10px;
+    border: 2px solid #03cf5d;
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+    /*box size를 content 기준 대신 border 기준으로 바꾸기*/
+}
+
+#header-search a {
+    text-decoration: none;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+#header-search fieldset input {
+    border: none;
+    padding: 0;
+    outline: none;
+    vertical-align: top;
+    /* display: inline-block; 알아서 inline-block이 적용돼잇음 */
+    width: 405px;
+}
+
+#header-search fieldset button {
+    width: 46px;
+    height: 46px;
+    border: none;
+    padding: 0;
+    background: #03cf5d;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+#search-image {
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+    background-position: -4px -60px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* margin: 14px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10px, -10px);
+}
