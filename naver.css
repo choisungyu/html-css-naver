@@ -24,6 +24,9 @@ body {
     text-indent: 100%;
     overflow: hidden;
     vertical-align: middle;
+    /* h1 만 위치를 조절하고 싶으면 relative 를 이용해라  */
+    position: relative;
+    top: -4px;
 }
 
 #header-search fieldset {
