@@ -12,6 +12,10 @@ body {
     padding: 0px;
 }
 
+#header-top {
+    float: right;
+}
+
 #header-center {
     position: relative;
     margin: 0 auto;
@@ -118,12 +122,15 @@ nav span:first-child {
     height: 16px;
     display: inline-block;
     background-repeat: no-repeat;
+    margin-left: 14px;
 }
 
 nav li:first-child span:first-child {
     width: 25px;
     background-position: -259px -259px;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
+    /* first li 에서만 margin-left 넣고 싶지 않을 때  */
+    margin-left: 0;
 }
 
 nav li:nth-child(2) span:first-child {
