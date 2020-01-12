@@ -3,6 +3,9 @@
     /* border 를 기준으로 */
 }
 
+
+/* html & body 에는 기본적으로 마진패딩이 잡혀있다. */
+
 html,
 body {
     margin: 0px;
@@ -24,7 +27,7 @@ body {
     text-indent: 100%;
     overflow: hidden;
     vertical-align: middle;
-    /* h1 만 위치를 조절하고 싶으면 relative 를 이용해라  */
+    /* h1 만 위치를 조절하고 싶으면 relative 를 이용해라 relative : static 현재 위치 기반으로 움직인다  */
     position: relative;
     top: -4px;
 }
@@ -38,6 +41,7 @@ body {
     border: 2px solid #03cf5d;
     box-sizing: border-box;
     vertical-align: middle;
+    /* position 이 absolute 가장 가까운 조상이 relative 인 경우 : h1(containing block of fieldset) */
     position: relative;
     /*box size를 content 기준 대신 border 기준으로 바꾸기*/
 }
@@ -82,7 +86,7 @@ body {
     display: inline-block;
     width: 20px;
     height: 20px;
-    /* margin: 14px; margin 으로 간격을 조절 하던가 아님 포지션을 이용해서 조절하던가 하기 */
+    /* margin: 14px; margin 으로 간격을 조절 하던가 & 포지션을 이용해서 조절하던가 하기 ( 두가지 방법 ) */
     position: absolute;
     top: 50%;
     left: 50%;
