@@ -101,6 +101,10 @@ body {
     /*box size를 content 기준 대신 border 기준으로 바꾸기*/
 }
 
+#header-search {
+    clear: both;
+}
+
 #header-search a {
     text-decoration: none;
 }
