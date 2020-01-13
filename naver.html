@@ -95,13 +95,15 @@
 
             <!-- 연합뉴스 & 언론사 & 날씨 & 해피빈  -->
             <div id="main-second-block">
-                <div class="inline-block">
+                <div class="float-left">
+                    <!-- float-left:first-child -->
                     <div id="main-newstop">
                         <h3>연합뉴스</h3>
                         <ol>
                             <li style="font-size: 12px;">영어가 될 때까지 스피킹맥스 </li>
                         </ol>
                     </div>
+                    <!-- float-left:last-child -->
                     <div id="main-newstand">
                         <h3>뉴스 스탠드</h3>
                         <ul>
@@ -127,7 +129,7 @@
                     </div>
                 </div>
 
-                <div class="inline-block">
+                <div class="float-left">
 
                     <div id="main-weather"></div>
                     <div id="main-second-ad"></div>
@@ -135,29 +137,34 @@
                 </div>
             </div>
             <!-- 주제별보기 & 쇼핑 -->
-            <div id="main-themecast">
-                <div class="inline-block">
+            <div id="main-third-block">
 
-                    <h3>주제별보기</h3>
+                <div id="main-themecast">
+                    <div class="inline-block">
+
+                        <h3>주제별보기</h3>
+                    </div>
+
                 </div>
+                <div id="main-shoppingcast">
+                    <div class="inline-block">
 
-            </div>
-            <div id="main-shoppingcast">
-                <div class="inline-block">
-
-                    <h3>쇼핑</h3>
+                        <iframe src="https://castbox.shopping.naver.com/shopbox/main.nhn?" id="cnsv_shbx" title="쇼핑캐스트" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" width="330" height="882">쇼핑캐스트 : <a href="https://castbox.shopping.naver.com/shopbox/main.nhn?">https://castbox.shopping.naver.com/shopbox/main.nhn?</a></iframe>
+                    </div>
                 </div>
-
             </div>
             <!-- 이벤트 & 예약 -->
-            <div id="main-btmbn">
-                <div class="inline-block">
+            <div id="main-fourth-block">
 
-                    <h3>이벤트</h3>
+                <div id="main-btmbn">
+                    <div class="inline-block">
+
+                        <h3>이벤트</h3>
+                    </div>
                 </div>
-            </div>
-            <div id="main-rightbn">
-                <h3>예약</h3>
+                <div id="main-rightbn">
+                    <h3>예약</h3>
+                </div>
             </div>
         </div>
     </main>

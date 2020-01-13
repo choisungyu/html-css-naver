@@ -24,7 +24,20 @@ h6 {
 }
 
 
-/* float:left , margin collection 해결하기 위한 inline-block */
+/* 1) float:left , 2) inline-block  // margin collection 해결하기 위한  */
+
+
+/* 가로문제해결 */
+
+.float-left {
+    float: left;
+}
+
+
+/* 새로문제해결 */
+
+
+/* vertical-align : top */
 
 .inline-block {
     display: inline-block;
@@ -261,11 +274,12 @@ main {
     width: 1100px;
 }
 
-#main-second-block .inline-block:first-child {
+#main-second-block .float-left:first-child {
     width: 740px;
+    margin-right: 8px;
 }
 
-#main-second-block .inline-block:last-child {
+#main-second-block .float-left:last-child {
     width: 332px;
     vertical-align: top;
 }
@@ -274,8 +288,23 @@ main {
 /* main-first-block .main-ad .main-login  */
 
 #main-first-block {
+    vertical-align: top;
+    display: inline-block;
+    /* width: 100%; */
+    margin-bottom: 8px;
+}
+
+#main-second-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 8px;
+}
+
+#main-third-block,
+#main-fourth-block {
     display: inline-block;
     width: 100%;
+    vertical-align: top;
 }
 
 #main-ad {
@@ -283,7 +312,7 @@ main {
     width: 740px;
     height: 120px;
     background-color: #03cf5d;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; 부모로 옮기기 */
     margin-right: 8px;
     float: left;
     background-image: url(https://ssl.pstatic.net/tveta/libs/1261/1261810/0cfa5801647ca7ecafe0_20200110163424306.jpg);
@@ -294,7 +323,7 @@ main {
     width: 332px;
     height: 120px;
     background-color: #fff;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; 부모로 옮기기 */
     float: left;
     /* font-size: 16px; */
 }
@@ -308,7 +337,7 @@ main {
     height: 46px;
     background-color: #fff;
     margin-bottom: 8px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
 }
 
 #main-newstop h3,
@@ -317,10 +346,11 @@ main {
 }
 
 #main-newstand {
+    vertical-align: top;
     display: inline-block;
     width: 740px;
     height: 246px;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px;  => 부모로 이동 */
     margin-right: 8px;
     background-color: #fff;
 }
@@ -331,14 +361,15 @@ main {
 }
 
 #main-newstand ul {
+    display: inline-block;
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
 
 #main-newstand li {
+    width: calc(100% / 6);
     float: left;
-    width: 123px;
     height: 67px;
     border-right: 1px solid #f1f3f6;
     border-bottom: 1px solid #f1f3f6;
@@ -365,17 +396,18 @@ main {
 }
 
 #main-second-ad {
+    vertical-align: top;
     display: inline-block;
     width: 332px;
     height: 150px;
     background-color: #fff;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; => 부모로 이동 */
 }
 
 #main-themecast {
     /* display: inline-block; */
     width: 740px;
-    height: 837px;
+    height: 882px;
     background: white;
     margin-bottom: 8px;
     margin-right: 8px;
@@ -384,7 +416,7 @@ main {
 
 #main-shoppingcast {
     width: 332px;
-    height: 837px;
+    height: 882px;
     background: white;
     margin-bottom: 8px;
     float: left;
