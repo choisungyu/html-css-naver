@@ -6,6 +6,31 @@
 
 /* html & body 에는 기본적으로 마진패딩이 잡혀있다. */
 
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: NanumSquare, Dotum, "돋움", Helvetica, AppleSDGothicNeo, sans-serif;
+    /* background: #fff; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+
+/* float:left , margin collection 해결하기 위한 inline-block */
+
+.inline-block {
+    display: inline-block;
+    width: 740px;
+}
+
 #header-top span:first-child {
     height: 21px;
     color: #888;
@@ -57,13 +82,6 @@
     background-position: -136px -158px;
 }
 
-html,
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: NanumSquare, Dotum, "돋움", Helvetica, AppleSDGothicNeo, sans-serif;
-}
-
 #header-top {
     float: right;
     margin-top: 8px;
@@ -108,7 +126,7 @@ body {
 
 #header-search {
     clear: both;
-    padding-top: 20;
+    padding-top: 45px;
 }
 
 #header-search a {
@@ -225,6 +243,168 @@ nav li {
     margin-top: -9px;
     color: #00ab33;
     font-size: 16px;
+}
+
+#rank-title {
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+main {
+    display: inline-block;
+    width: 100%;
+    background: #f2f4f7;
+}
+
+#main-centered {
+    padding: 8px 10px 0;
+    width: 1100px;
+}
+
+#main-second-block .inline-block:first-child {
+    width: 740px;
+}
+
+#main-second-block .inline-block:last-child {
+    width: 332px;
+    vertical-align: top;
+}
+
+
+/* main-first-block .main-ad .main-login  */
+
+#main-first-block {
+    display: inline-block;
+    width: 100%;
+}
+
+#main-ad {
+    /* display: inline-block; */
+    width: 740px;
+    height: 120px;
+    background-color: #03cf5d;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    float: left;
+    background-image: url(https://ssl.pstatic.net/tveta/libs/1261/1261810/0cfa5801647ca7ecafe0_20200110163424306.jpg);
+}
+
+#main-login {
+    /* display: inline-block; */
+    width: 332px;
+    height: 120px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    float: left;
+    /* font-size: 16px; */
+}
+
+
+/* <img src="" width="740" height="120" alt="[광고]" border="0"> */
+
+#main-newstop {
+    display: inline-block;
+    width: 740px;
+    height: 46px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+#main-newstop h3,
+#main-newstop ol {
+    display: inline-block;
+}
+
+#main-newstand {
+    display: inline-block;
+    width: 740px;
+    height: 246px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    background-color: #fff;
+}
+
+#main-newstand h3 {
+    height: 45px;
+    border-bottom: 1px solid #ebeef3;
+}
+
+#main-newstand ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#main-newstand li {
+    float: left;
+    width: 123px;
+    height: 67px;
+    border-right: 1px solid #f1f3f6;
+    border-bottom: 1px solid #f1f3f6;
+    text-align: center;
+}
+
+#main-newstand li img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main-newstand h3 {
+    height: 45px;
+    border-bottom: 1px solid #ebeef3;
+}
+
+#main-weather {
+    display: inline-block;
+    width: 332px;
+    height: 142px;
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+
+#main-second-ad {
+    display: inline-block;
+    width: 332px;
+    height: 150px;
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+
+#main-themecast {
+    /* display: inline-block; */
+    width: 740px;
+    height: 837px;
+    background: white;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    float: left;
+}
+
+#main-shoppingcast {
+    width: 332px;
+    height: 837px;
+    background: white;
+    margin-bottom: 8px;
+    float: left;
+}
+
+#main-btmbn {
+    float: left;
+    width: 740px;
+    height: 130px;
+    background: #fff;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#main-rightbn {
+    float: left;
+    width: 332px;
+    height: 130px;
+    background-image: url(https://ssl.pstatic.net/tveta/libs/1272/1272646/bdd83208e9f4a54669ff_20200110173525517.jpg);
+    margin-bottom: 8px;
 }
 
 
