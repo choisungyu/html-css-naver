@@ -234,7 +234,7 @@ nav ul {
     display: inline-block;
 }
 
-nav li {
+#nav-menu li {
     display: inline-block;
 }
 
@@ -246,10 +246,37 @@ nav li {
     background: #ebeef3;
 }
 
+
+/* 
+search-ranking ul > search-ranking (부모)
+따라서 search-ranking ul 의 position 을 맘대로 조종 할 수 있음!
+*/
+
 #search-ranking {
     position: absolute;
     top: 14px;
-    right: 100px;
+    right: 0px;
+    width: 198px;
+    height: 20px;
+}
+
+#search-ranking:hover ul {
+    display: inline-block;
+}
+
+#search-ranking ul {
+    display: none;
+    list-style: none;
+    padding: 17px;
+    margin: 0;
+    width: 332px;
+    height: 334px;
+    border: 1px solid #aaa;
+    background: white;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: 100;
 }
 
 #rank-number {
@@ -266,6 +293,7 @@ nav li {
 main {
     display: inline-block;
     width: 100%;
+    overflow: hidden;
     background: #f2f4f7;
 }
 
@@ -303,7 +331,7 @@ main {
 #main-third-block,
 #main-fourth-block {
     display: inline-block;
-    width: 100%;
+    /* width: 100%; */
     vertical-align: top;
 }
 
@@ -445,7 +473,7 @@ main {
 
 /* nav span:first-child 로 공통적인거 묶어준다. */
 
-nav span:first-child {
+#nav-menu span:first-child {
     height: 16px;
     display: inline-block;
     background-repeat: no-repeat;
@@ -453,39 +481,39 @@ nav span:first-child {
     margin-left: 10px;
 }
 
-nav li:first-child span:first-child {
+#nav-menu li:first-child span:first-child {
     width: 25px;
     background-position: -259px -259px;
     /* first li 에서만 margin-left 넣고 싶지 않을 때  */
     margin-left: 0;
 }
 
-nav li:nth-child(2) span:first-child {
+#nav-menu li:nth-child(2) span:first-child {
     width: 27px;
     background-position: -37px -259px;
 }
 
-nav li:nth-child(3) span:first-child {
+#nav-menu li:nth-child(3) span:first-child {
     width: 40px;
     background-position: -182px -156px;
 }
 
-nav li:nth-child(4) span:first-child {
+#nav-menu li:nth-child(4) span:first-child {
     width: 40px;
     background-position: -126px -130px;
 }
 
-nav li:nth-child(5) span:first-child {
+#nav-menu li:nth-child(5) span:first-child {
     width: 26px;
     background-position: -294px 0;
 }
 
-nav li:nth-child(6) span:first-child {
+#nav-menu li:nth-child(6) span:first-child {
     width: 25px;
     background-position: -71px -285px;
 }
 
-nav li:nth-child(7) span:first-child {
+#nav-menu li:nth-child(7) span:first-child {
     width: 32px;
     background-position: -244px -208px;
 }
@@ -493,47 +521,47 @@ nav li:nth-child(7) span:first-child {
 
 /* 검정 */
 
-nav li:nth-child(8) span:first-child {
+#nav-menu li:nth-child(8) span:first-child {
     width: 26px;
     background-position: -294px -182px;
 }
 
-nav li:nth-child(9) span:first-child {
+#nav-menu li:nth-child(9) span:first-child {
     width: 28px;
     background-position: -200px -208px;
 }
 
-nav li:nth-child(10) span:first-child {
+#nav-menu li:nth-child(10) span:first-child {
     width: 26px;
     background-position: -294px -104px;
 }
 
-nav li:nth-child(11) span:first-child {
+#nav-menu li:nth-child(11) span:first-child {
     width: 40px;
     background-position: -124px -156px;
 }
 
-nav li:nth-child(12) span:first-child {
+#nav-menu li:nth-child(12) span:first-child {
     width: 27px;
     background-position: -148px -259px;
 }
 
-nav li:nth-child(13) span:first-child {
+#nav-menu li:nth-child(13) span:first-child {
     width: 27px;
     background-position: -222px -259px;
 }
 
-nav li:nth-child(14) span:first-child {
+#nav-menu li:nth-child(14) span:first-child {
     width: 26px;
     background-position: -294px -130px;
 }
 
-nav li:nth-child(15) span:first-child {
+#nav-menu li:nth-child(15) span:first-child {
     width: 13px;
     background-position: -79px -78px;
 }
 
-nav li:nth-child(16) span:first-child {
+#nav-menu li:nth-child(16) span:first-child {
     width: 27px;
     background-position: -185px -259px;
 }
@@ -541,7 +569,7 @@ nav li:nth-child(16) span:first-child {
 
 /* 더보기 */
 
-nav li.more:first-child span:first-child {
+#nav-menu li.more:first-child span:first-child {
     width: 55px;
     background-position: -66px -104px;
 }
